@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<video id= "video1" width="500" height="500" controls>
+    <source src="movie.mp4" type="video/mp4">
+</video>
+<script>
+    var vid = document.getElementById("video1");
+    let arr=[]
+   vid.onpause = function() {
+     arr.push(vid.currentTime);
+     // printing
+     //console.log(arr);
+   };
+</script>
+</html>
